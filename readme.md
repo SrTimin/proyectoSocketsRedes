@@ -2,7 +2,7 @@ Cuatro en Línea
 
 Descripción:
 
-Este proyecto implementa el clásico juego Cuatro en Línea utilizando un modelo Cliente/Servidor en C++. El objetivo es alinear cuatro fichas consecutivas del mismo color en horizontal, vertical o diagonal antes que el oponente.
+Este proyecto implementa el clásico juego Cuatro en Línea utilizando un modelo Cliente/Servidor en C++. El objetivo es alinear cuatro fichas consecutivas en horizontal, vertical o diagonal antes que el oponente.
 
 Funcionalidades:
 
