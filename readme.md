@@ -6,25 +6,24 @@ Este proyecto implementa el clásico juego Cuatro en Línea utilizando un modelo
 
 Funcionalidades:
 
-    Implementación del juego Cuatro en Línea.
+Implementación del juego Cuatro en Línea.
     Modelo Cliente/Servidor para la comunicación entre jugadores.
     Interfaz de línea de comandos para el servidor y el cliente.
     Compilación sencilla mediante Makefile.
 
 Requisitos:
 
-    Compilador C++ (g++)
+Compilador C++ (g++)
     Herramienta make
 
 Compilación:
 
-    Asegúrese de tener g++ y make instalados.
-    Diríjase al directorio del proyecto.
-    Ejecute el siguiente comando para compilar el servidor y el cliente:
+ Asegúrese de tener g++ y make instalados.
+ Diríjase al directorio del proyecto.
+ Ejecute el siguiente comando para compilar el servidor y el cliente:
 
-Bash
 
-make
+    make
 
 
 
@@ -32,32 +31,27 @@ Ejecución:
 
 Servidor:
 
-    Ejecute el servidor indicando el puerto en el que se escuchará las conexiones entrantes:
+Ejecute el servidor indicando el puerto en el que se escuchará las conexiones entrantes:
 
-Bash
 
-./servidor <puerto>
+    ./servidor <puerto>
 
 
 Ejemplo:
-Bash
 
-./servidor 7777
+    ./servidor 7777
 
 
 
 Cliente:
+Ejecute el cliente indicando la dirección IP y el puerto del servidor al que se conectará:
 
-    Ejecute el cliente indicando la dirección IP y el puerto del servidor al que se conectará:
 
-Bash
-
-./cliente <ip_servidor> <puerto>
+    ./cliente <ip_servidor> <puerto>
 
 
 Ejemplo:
-Bash
 
-./cliente 192.168.1.100 7777
+    ./cliente 192.168.1.100 7777
 
 
