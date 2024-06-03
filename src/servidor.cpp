@@ -75,7 +75,11 @@ void manejarJuego(std::shared_ptr<ServidorConexion> conexion, const std::string&
     Jugador servidor("Servidor", 'S');
     Jugador cliente("Cliente", 'C');
 
-    EstadoJuego estado = EstadoJuego::TurnoServidor;
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_int_distribution<> dis(0, 1);
+
+    EstadoJuego estado = dis(gen) == 0 ? EstadoJuego::TurnoServidor : EstadoJuego::TurnoCliente;
 
     std::cout << "Juego " << clienteInfo << ": inicia juego el " << (estado == EstadoJuego::TurnoServidor ? "servidor" : "cliente") << "." << std::endl;
 
